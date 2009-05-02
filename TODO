@@ -1,0 +1,34 @@
+$Id: TODO,v 1.3 2003/04/08 10:08:13 ctriv Exp $
+
+--
+
+Installer stuff (pluginfo table isn't created right now...
+the table looks like this (in mysql at least).
+
+CREATE TABLE pluginfo (
+  plugin varchar(32) default NULL,
+  name varchar(64) default NULL,
+  data blob,
+  UNIQUE KEY plugin (plugin,name)
+) TYPE=MyISAM;
+
+--
+
+DBFile support
+
+--
+
+A plugin installer/manager
+
+-- 
+
+Lots of plugins
+
+-- 
+
+Lock down the config stuff to provide better syntax checking/error handing.
+
+--
+
+A Console (something you can connect to over 127.0.0.1 would be awesome.)
+
